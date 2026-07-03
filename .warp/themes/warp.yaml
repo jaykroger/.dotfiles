@@ -1,0 +1,25 @@
+name: warp
+accent: "#f1f1f1"
+cursor: "#CA81FF"
+background: "#000000"
+details: darker
+foreground: "#f1f1f1"
+terminal_colors:
+  bright:
+    black: "#666666"
+    blue: "#5c78ff"
+    cyan: "#5ac8ff"
+    green: "#905aff"
+    magenta: "#5ea2ff"
+    red: "#E48DFF"
+    white: "#ffffff"
+    yellow: "#657b83"
+  normal:
+    black: "#121212"
+    blue: "#657b83"
+    cyan: "#28b9ff"
+    green: "#F1F1F1"
+    magenta: "#2883ff"
+    red: "#CA81FF"
+    white: "#f1f1f1"
+    yellow: "#3d2aff"

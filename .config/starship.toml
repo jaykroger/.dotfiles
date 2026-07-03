@@ -1,0 +1,160 @@
+# ~/.config/starship.toml
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+## Shell Prompt Format
+##############################
+
+# format = """[╭╴](238) $os $all\
+# [╰─](238)$character"""
+
+format = "$all"
+
+## OS and Shell Settings
+########################
+
+# Prompt characters
+[character]
+success_symbol = "[](238)"
+error_symbol = "[](238)"
+disabled = true
+
+# OS symbol
+[os]
+format = "[$symbol](bold white) "
+disabled = true
+
+[os.symbols]
+Amazon = ""
+Kali = ""
+Macos = ""
+Raspbian = ""
+Redhat = ""
+RedHatEnterprise = ""
+Ubuntu = ""
+Unknown = ""
+Windows = "󰍲"
+
+# Username
+[username]
+style_user = "white"
+style_root = "black"
+format = "[@$user]($style) "
+show_always = true
+disabled = false
+
+# Hostname
+[hostname]
+ssh_only = false
+format = "[$hostname](yellow) "
+disabled = true
+
+# Directory
+[directory]
+truncation_length = 5
+truncation_symbol = "…/"
+home_symbol = "~"
+read_only_style = "white"
+read_only = "󰉐"
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "yellow"
+
+
+## App & Language-Specific Settings
+###################################
+
+[aws]
+symbol = ""
+format =" [$symbol $region]($style) [$profile 󰍂 $duration](white) "
+style = "white"
+disabled = false
+
+[azure]
+symbol = ""
+format = " [$symbol $subscription]($style) "
+style = "white"
+disabled = false
+
+[docker_context]
+symbol = ""
+format = " [$symbol $context ]($style) "
+style = "white"
+disabled = false
+
+[git_branch]
+symbol = ""
+format = " [$symbol $branch]($style) "
+truncation_length = 4
+truncation_symbol = "…/"
+style = "white"
+disabled = false
+
+[git_commit]
+tag_symbol = '  '
+disabled = false
+
+[git_status]
+format = ' [\($all_status$ahead_behind\)]($style) '
+
+conflicted = "🏳"
+up_to_date = ""
+untracked = ""
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+stashed = ""
+modified = ""
+staged = '[++\($count\)](green)'
+renamed = "襁"
+deleted = ""
+style = "white"
+disabled = true
+
+[golang]
+symbol = ""
+format = " [$symbol $version]($style) "
+disabled = false
+
+[helm]
+symbol = ""
+format = " [$symbol $version]($style) "
+style = "white"
+disabled = false
+
+
+[kubernetes]
+symbol = "󱃾"
+format = ' [$symbol $cluster \($namespace\)]($style) '
+style = "white"
+disabled = false
+
+[nodejs]
+symbol = ""
+format = " [$symbol $version]($style) "
+style = "white"
+disabled = false
+
+[package]
+symbol = "󰏓"
+format = " [$symbol $version]($style) "
+style = "white"
+disabled = false
+
+[python]
+symbol = ""
+format = " [$symbol $version]($style) "
+style = "white"
+disabled = false
+
+[swift]
+symbol = ""
+format = " [$symbol $version]($style) "
+style = "white"
+disabled = false
+
+[terraform]
+symbol = ""
+format = " [$symbol terraform $version]($style) "
+disabled = false
+style    = "white"
