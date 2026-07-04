@@ -1,2 +1,2 @@
-export DOTFILES_DIR="$HOME/dotfiles"
+export DOTFILES_DIR="$HOME/.dotfiles"
   
